@@ -1,4 +1,4 @@
-#rack-activrecord-example
+# rack-activrecord-example
 
 Trying to get this working...Rack + Activrecord + Postgres
 
