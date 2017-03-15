@@ -3,16 +3,9 @@ default: &default
   encoding: unicode
   pool: 5
 
-production:
-  <<: *default 
-  host: <%= ENV['DATABASE_HOST'] || 'db' %>
-  database: <%= ENV['DATABASE_NAME'] || 'sinatra' %>
-  username: <%= ENV['DATABASE_USER'] || 'sinatra' %>
-  password: <%= ENV['DATABASE_PASSWORD'] || 'sinatra' %>
-
 development:
   <<: *default
-  host: <%= ENV['DATABASE_HOST'] || 'db' %>
-  database: <%= ENV['DATABASE_NAME'] || 'sinatra' %>
-  username: <%= ENV['DATABASE_USER'] || 'sinatra' %>
-  password: <%= ENV['DATABASE_PASSWORD'] || 'sinatra' %>
+  host: db
+  database: sinatra
+  username: sinatra
+  password: sinatra

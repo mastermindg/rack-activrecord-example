@@ -8,4 +8,5 @@ class Resource < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
 end
 
-puts JSON Resource.select('id', 'name').all
+#puts JSON Resource.all.select
+puts "Testing it"
