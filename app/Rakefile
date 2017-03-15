@@ -1,6 +1,8 @@
 require 'rake/testtask'
 require './app'
 
+DatabaseTasks.database_configuration = YAML.load(File.read(File.join(root, 'config/database.yml')))
+
 Rake::TestTask.new do |t|
   t.libs << "test"
   t.test_files = FileList['test/*_test.rb']
