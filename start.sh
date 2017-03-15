@@ -6,4 +6,4 @@ rake db:migrate --trace
 #echo "Starting seeding..."
 #rake db:seed
 ruby app.rb
-ping -c 50 yahoo.com
+ping -c 20 yahoo.com
